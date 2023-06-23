@@ -6,6 +6,7 @@ import Hero from '~/components/widgets/Hero.astro';
 import Features from '~/components/widgets/Features.astro';
 import Content from '~/components/widgets/Content.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
+import Note from '~/components/widgets/Note.astro';
 
 const meta = {
   title: SITE.title,
@@ -40,6 +41,10 @@ const meta = {
       So the candidate knows where to improve, their resume or skills.
     </Fragment>
   </Hero>
+
+  <!-- Notes Widget *************** -->
+  <Note />
+
   <!-- Features Widget *************** -->
   <Features
     highlight="Features"
