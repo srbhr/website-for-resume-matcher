@@ -1,9 +1,9 @@
-import defaultImage from './assets/images/favicon.png';
+import defaultImage from './assets/images/logo-rm.png';
 
 const CONFIG = {
   name: 'ResumeMatcher',
 
-  origin: 'https://astrowind.vercel.app',
+  origin: 'https://www.resumematcher.fyi/',
   basePathname: '/',
   trailingSlash: false,
 
@@ -24,11 +24,11 @@ const CONFIG = {
     timeZone: 'UTC',
   }),
 
-  googleAnalyticsId: false, // or "G-XXXXXXXXXX",
-  googleSiteVerificationId: 'orcPxI47GSa-cRvY11tUe6iGg2IO_RPvnA1q95iEM3M',
+  googleAnalyticsId: 'G-9TE3D9NWZB', // or "G-XXXXXXXXXX",
+  googleSiteVerificationId: '',
 
   blog: {
-    disabled: false,
+    disabled: true,
     postsPerPage: 4,
 
     post: {
