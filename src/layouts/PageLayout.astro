@@ -1,0 +1,27 @@
+---
+import Layout from '~/layouts/BaseLayout.astro';
+import Header from '~/components/widgets/Header.astro';
+import Footer from '~/components/widgets/Footer.astro';
+
+import { headerData, footerData } from '~/data';
+
+import { MetaSEO } from '~/types';
+
+export interface Props {
+  meta?: MetaSEO;
+}
+
+const { meta } = Astro.props;
+---
+
+<Layout {meta}>
+  <slot name="header">
+    <Header {...headerData} isSticky showRssFeed showToggleTheme />
+  </slot>
+  <main>
+    <slot />
+  </main>
+  <slot name="footer">
+    <Footer {...footerData} />
+  </slot>
+</Layout>

@@ -1,0 +1,137 @@
+---
+import { SITE } from '~/config.mjs';
+import Layout from '~/layouts/PageLayout.astro';
+
+import Hero from '~/components/widgets/Hero.astro';
+import Features from '~/components/widgets/Features.astro';
+import Content from '~/components/widgets/Content.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+const meta = {
+  title: SITE.title,
+  description: SITE.description,
+  dontUseTitleTemplate: true,
+};
+---
+
+<Layout {meta}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero
+    callToAction={{ text: 'GitHub', href: 'https://github.com/srbhr/Naive-Resume-Matching', icon: 'mdi:github' }}
+    callToAction2={{ text: 'Learn more', href: '#features' }}
+    image={{ src: import('~/assets/images/diagram.png'), alt: 'Resume Matcher Diagram' }}
+  >
+    <Fragment slot="title">
+      A better way to <span class="xl:inline"> create resume.</span>
+      <span class="text-accent dark:text-white highlight"> Resume Matcher</span>
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      <span class="sm:inline">
+        <span class="font-semibold">Resume Matcher</span> is a free, open-source project that aims to deliver deep insights
+        into your resume and the job you're applying for.</span
+      >
+      <br />
+      <br />
+
+      <span class="block mb-1 font-bold text-blue-600">Resume Matcher</span> Aims to make the problem of tailoring resumes
+      for different job easier by providing keywords, semantic similarity and a match score with the current job description.
+      So the candidate knows where to improve, their resume or skills.
+    </Fragment>
+  </Hero>
+  <!-- Features Widget *************** -->
+  <Features
+    highlight="Features"
+    title="What are we trying to build"
+    subtitle="Aim is to allow developers understand their resume and skill set by comparing it to a set of job descriptions. And then, highligh the similarities and differences to them, so developers can make decisions based on data."
+    items={[
+      [
+        {
+          title: 'Natural Language Processing',
+          description:
+            'We are using state-of-the-art natural language processing to extract and understand context of resumes and job descriptions.',
+          icon: 'mdi:check-decagram',
+        },
+        {
+          title: 'Vector Similarity',
+          description:
+            '[Upcoming Feature] In the coming time, adding Weaviate Vector Database, Qdrant Vector Search and Milvus support for this project.',
+          icon: 'mdi:arrow-collapse',
+        },
+        {
+          title: 'Data Visualization',
+          description: 'Generating as much data, to make decisions based on data instead of heuristics.',
+          icon: 'mdi:chart-donut',
+        },
+      ],
+      [
+        {
+          title: 'Data Dashboard & Website',
+          description: 'Having a good web page allows the user to interact with the project easily.',
+          icon: 'mdi:web',
+        },
+        {
+          title: 'Text Similarity',
+          description:
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla.',
+          icon: 'mdi:format-list-text',
+        },
+        {
+          title: 'Python',
+          description: 'As of this stage, the project is written in Python.',
+          icon: 'mdi:language-python',
+        },
+      ],
+    ]}
+  />
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    highlight="Open to ideas"
+    title="Opportunities are endless ..."
+    items={[
+      {
+        title: 'Introduce an LLM to create resumes',
+        description:
+          'With the advent of LLMs it has become really easy to generate resume. And when you have the key data you can do it much faster, and better.',
+      },
+      {
+        title: 'Create a front-end in React, Vue, etc.',
+        description:
+          'An easy to use and setup dashboard that helps to streamline the process for end users. This can be your contribution.',
+      },
+      {
+        title: 'Create a docker image.',
+        description: 'Make it very easy for all users to try and use the project.',
+      },
+    ]}
+    image={{
+      src: import('~/assets/images/collab.png'),
+      alt: 'Colorful Image',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Bring your own idea</h3>
+      This is a project for the developers by the developers. We're trying to ease up the process of creating and tailoring
+      resumes to job description. With the goal of getting a job faster. Free and Open-Source. You can come up with any idea,
+      such as:
+    </Fragment>
+  </Content>
+  <!-- CallToAction Widget *********** -->
+
+  <CallToAction
+    callToAction={{
+      text: 'GitHub',
+      href: 'https://github.com/srbhr/Naive-Resume-Matching',
+      icon: 'mdi:github',
+    }}
+  >
+    <Fragment slot="title">
+      Resume <br class="block sm:hidden" /><span class="sm:whitespace-nowrap">Matcher</span>
+    </Fragment>
+
+    <Fragment slot="subtitle">Please give us a 🌟 and try the project before you go.</Fragment>
+  </CallToAction>
+</Layout>
