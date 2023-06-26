@@ -1,4 +1,4 @@
-import defaultImage from './assets/images/logo-rm.png';
+import defaultImage from './assets/images/gh_heaer.png';
 
 const CONFIG = {
   name: 'ResumeMatcher',
@@ -7,7 +7,7 @@ const CONFIG = {
   basePathname: '/',
   trailingSlash: false,
 
-  title: 'ResumeMatcher — Free Open Source Tool To Deep Dive Into Your Resume & Job Description',
+  title: 'ResumeMatcher | Free Open Source Tool To Deep Dive Into Your Resume & Job Description',
   description:
     'Understand the key data differences between your job description and your resume, then improve upon it. Get hired faster!',
   defaultImage: defaultImage,

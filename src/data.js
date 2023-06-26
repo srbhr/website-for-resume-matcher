@@ -54,6 +54,6 @@ export const footerData = {
     { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/srbhr/Naive-Resume-Matching' },
   ],
   footNote: `
-  Apace 2.0  License © <a class="text-blue-600 hover:underline dark:text-gray-200" href="https://github.com/srbhr/Naive-Resume-Matching/graphs/contributors"> ResumeMatcher Contributors</a>
+  Apache 2.0  License © <a class="text-blue-600 hover:underline dark:text-gray-200" href="https://github.com/srbhr/Naive-Resume-Matching/graphs/contributors"> ResumeMatcher Contributors</a>
 `,
 };
