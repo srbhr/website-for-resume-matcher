@@ -28,14 +28,14 @@ const defaultImage = SITE.defaultImage
 
 const {
   title = SITE.name,
-  description = '',
+  description = SITE.description,
   image: _image = defaultImage,
 
   canonical = getCanonical(String(Astro.url.pathname)),
   noindex = false,
   nofollow = false,
 
-  ogTitle = title,
+  ogTitle = 'ResumeMatcher',
   ogType = 'website',
 
   dontUseTitleTemplate = false,
