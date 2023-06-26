@@ -4,6 +4,7 @@ import Layout from '~/layouts/PageLayout.astro';
 
 import Hero from '~/components/widgets/Hero.astro';
 import Features from '~/components/widgets/Features.astro';
+import Features2 from '~/components/widgets/Features2.astro';
 import Content from '~/components/widgets/Content.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 import Note from '~/components/widgets/Note.astro';
@@ -21,24 +22,27 @@ const meta = {
   <Hero
     callToAction={{ text: 'GitHub', href: 'https://github.com/srbhr/Naive-Resume-Matching', icon: 'mdi:github' }}
     callToAction2={{ text: 'Learn more', href: '#features' }}
-    image={{ src: import('~/assets/images/diagram.png'), alt: 'Resume Matcher Diagram' }}
   >
     <Fragment slot="title">
-      A better way to <span class="xl:inline"> create resume.</span>
-      <span class="text-accent dark:text-white highlight"> Resume Matcher</span>
+      Your Tool for Tailoring Resumes to Job Descriptions
+      <span
+        class="text-accent text-transparent bg-clip-text bg-gradient-to-r from-pink-700 via-indigo-600 to-purple-700"
+      >
+        Resume Matcher</span
+      >
     </Fragment>
 
     <Fragment slot="subtitle">
       <span class="sm:inline">
-        <span class="font-semibold">Resume Matcher</span> is a free, open-source project that aims to deliver deep insights
-        into your resume and the job you're applying for.</span
-      >
-      <br />
-      <br />
+        <span class="mb-1 font-bold text-sky-600">Resume Matcher</span> is your secret weapon in the job market. Our free,
+        <span class="mb-1 font-bold text-emerald-500">open-source</span> tool empowers you to tailor your resume perfectly
+        for. each job you apply for
 
-      <span class="block mb-1 font-bold text-blue-600">Resume Matcher</span> Aims to make the problem of tailoring resumes
-      for different job easier by providing keywords, semantic similarity and a match score with the current job description.
-      So the candidate knows where to improve, their resume or skills.
+        <br />
+        <br />
+
+        <span class="font-semibold">Join us 🚀</span> in our journey to build a free, open-source tool.
+      </span>
     </Fragment>
   </Hero>
 
@@ -47,84 +51,114 @@ const meta = {
 
   <!-- Features Widget *************** -->
   <Features
-    highlight="Features"
-    title="What are we trying to build"
-    subtitle="Aim is to allow developers understand their resume and skill set by comparing it to a set of job descriptions. And then, highligh the similarities and differences to them, so developers can make decisions based on data."
+    highlight="Goal"
+    title="Our Mission"
+    subtitle="Our goal is to empower developers with a deeper understanding of their resumes and skill sets. By comparing your resume to a range of job descriptions, we highlight the similarities and differences, enabling you to make informed, data-driven decisions."
     items={[
       [
         {
           title: 'Natural Language Processing',
           description:
-            'We are using state-of-the-art natural language processing to extract and understand context of resumes and job descriptions.',
+            'We leverage state-of-the-art natural language processing techniques to extract and comprehend the context of resumes and job descriptions. This technology allows us to provide you with precise and meaningful insights.',
           icon: 'mdi:check-decagram',
         },
         {
-          title: 'Vector Similarity',
+          title: 'Vector Similarity - Upcoming Feature',
           description:
-            '[Upcoming Feature] In the coming time, adding Weaviate Vector Database, Qdrant Vector Search and Milvus support for this project.',
+            'In our continuous effort to enhance your experience, we are planning to incorporate Weaviate Vector Database, Qdrant Vector Search, and Milvus support into our project. These additions will further refine our ability to match your resume with job descriptions.',
           icon: 'mdi:arrow-collapse',
         },
         {
           title: 'Data Visualization',
-          description: 'Generating as much data, to make decisions based on data instead of heuristics.',
+          description:
+            'We believe in the power of data. Our platform generates comprehensive data visualizations, enabling you to make decisions based on concrete information rather than mere heuristics.',
           icon: 'mdi:chart-donut',
         },
       ],
       [
         {
-          title: 'Data Dashboard & Website',
-          description: 'Having a good web page allows the user to interact with the project easily.',
+          title: 'User-Friendly Interface',
+          description:
+            'We understand the importance of a seamless user experience. Our web page is designed to be intuitive and user-friendly, allowing you to interact with the project with ease.',
           icon: 'mdi:web',
         },
         {
           title: 'Text Similarity',
           description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla.',
+            'Our text similarity feature provides a detailed comparison between your resume and job descriptions. This feature helps you identify the areas where your resume aligns with the job requirements and where it needs improvement.',
           icon: 'mdi:format-list-text',
         },
         {
-          title: 'Python',
-          description: 'As of this stage, the project is written in Python.',
+          title: 'Python-Based',
+          description:
+            'Our project is currently written in Python, a powerful and versatile programming language known for its readability and efficiency.',
           icon: 'mdi:language-python',
         },
       ],
     ]}
   />
 
-  <!-- Content Widget **************** -->
-
-  <Content
+  <Features2
+    title="Join the Innovation"
+    subtitle="ResumeMatcher, a free open-source project, is built by developers for developers. We aim to simplify resume creation and invite innovative ideas to accelerate job searches. Your unique contributions are always welcome!"
     highlight="Open to ideas"
-    title="Opportunities are endless ..."
     items={[
       {
-        title: 'Introduce an LLM to create resumes',
+        title: 'Leverage Large Language Models (LLMs)',
         description:
-          'With the advent of LLMs it has become really easy to generate resume. And when you have the key data you can do it much faster, and better.',
+          'With the rise of LLMs, generating resumes has become significantly easier. If you have expertise in this area, you could help us integrate LLMs into our platform. ',
+        icon: 'flat-color-icons:radar-plot',
       },
       {
-        title: 'Create a front-end in React, Vue, etc.',
+        title: 'Develop a User-Friendly Front-End',
         description:
-          'An easy to use and setup dashboard that helps to streamline the process for end users. This can be your contribution.',
+          "A streamlined, intuitive dashboard can greatly enhance the user experience. If you're skilled in front-end development, particularly with frameworks like React or Vue, you could help us create a more user-friendly interface.",
+        icon: 'flat-color-icons:gallery',
       },
       {
-        title: 'Create a docker image.',
-        description: 'Make it very easy for all users to try and use the project.',
+        title: 'Create a Docker Image',
+        description:
+          "Docker images can simplify the deployment process, making it easier for users to try and use our project. If you're familiar with Docker, you could help us create a Docker image for ResumeMatcher.",
+        icon: 'flat-color-icons:command-line',
+      },
+      {
+        title: 'Enhance Data Visualization',
+        description:
+          'Data visualization is key to helping users understand the insights we provide. If you have a knack for creating clear, compelling data visualizations, your skills could greatly enhance our platform.',
+        icon: 'flat-color-icons:combo-chart',
+      },
+      {
+        title: 'Improve Text Similarity Algorithms',
+        description:
+          'Our text similarity feature is central to our tool. If you have expertise in natural language processing or machine learning, you could help us refine our text similarity algorithms, making our insights even more precise and valuable.',
+        icon: 'flat-color-icons:statistics',
+      },
+      {
+        title: 'Expand Language Support',
+        description:
+          "To make our tool accessible to as many users as possible, we aim to support multiple languages.  If you're multilingual and have experience in localization, you could help us expand our language support.",
+        icon: 'flat-color-icons:voice-presentation',
+      },
+      {
+        title: 'Improve Documentation',
+        description:
+          'Good documentation is crucial for any open-source project. If you have a knack for clear, concise writing, you could help us improve our documentation. This would make it easier for new contributors to understand our project and get involved.',
+        icon: 'flat-color-icons:document',
+      },
+      {
+        title: 'Enhance UI/UX Design',
+        description:
+          'The user interface and user experience (UI/UX) are key to making our tool accessible and enjoyable to use. If you have skills in UI/UX design, you could help us make our landing page and overall platform more intuitive and visually appealing.',
+        icon: 'flat-color-icons:close-up-mode',
+      },
+      {
+        title: 'Remember',
+        description:
+          ' We welcome all ideas that can enhance ResumeMatcher and help users land their dream jobs faster. Join us in revolutionizing the job search process!',
+        icon: 'flat-color-icons:rating',
       },
     ]}
-    image={{
-      src: import('~/assets/images/collab.png'),
-      alt: 'Colorful Image',
-    }}
-  >
-    <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Bring your own idea</h3>
-      This is a project for the developers by the developers. We're trying to ease up the process of creating and tailoring
-      resumes to job description. With the goal of getting a job faster. Free and Open-Source. You can come up with any idea,
-      such as:
-    </Fragment>
-  </Content>
-  <!-- CallToAction Widget *********** -->
+  />
 
   <CallToAction
     callToAction={{
@@ -134,9 +168,16 @@ const meta = {
     }}
   >
     <Fragment slot="title">
-      Resume <br class="block sm:hidden" /><span class="sm:whitespace-nowrap">Matcher</span>
+      <span
+        class="text-accent text-transparent bg-clip-text bg-gradient-to-r from-pink-700 via-indigo-600 to-purple-700"
+      >
+        Resume <br class="block sm:hidden" /><span class="sm:whitespace-nowrap">Matcher</span>
+      </span>
     </Fragment>
 
-    <Fragment slot="subtitle">Please give us a 🌟 and try the project before you go.</Fragment>
+    <Fragment slot="subtitle">
+      Ready to take your job search to the next level 🚀 Give ResumeMatcher a try today and see the difference it can
+      make!
+    </Fragment>
   </CallToAction>
 </Layout>
