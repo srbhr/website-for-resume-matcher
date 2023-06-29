@@ -19,7 +19,7 @@ const defaultImage = SITE.defaultImage
   ? (
       await getImage({
         src: SITE.defaultImage,
-        alt: 'Default image',
+        alt: 'Resume Matcher',
         width: 1200,
         height: 628,
       })
@@ -35,7 +35,7 @@ const {
   noindex = false,
   nofollow = false,
 
-  ogTitle = 'ResumeMatcher',
+  ogTitle = 'Resume Matcher',
   ogType = 'website',
 
   dontUseTitleTemplate = false,
@@ -73,12 +73,14 @@ const image =
           },
         ]
       : undefined,
-    // site_name: 'SiteName',
+    site_name: 'www.resumematcher.fyi',
   }}
   twitter={{
     // handle: '@handle',
-    // site: '@site',
-    cardType: image ? 'summary_large_image' : undefined,
+    site: 'www.resumematcher.fyi',
+    cardType: image
+      ? 'Resume Matcher | Free Open Source Tool To Deep Dive Into Your Resume & Job Description'
+      : undefined,
   }}
 />
 
@@ -92,7 +94,7 @@ const image =
 
 {SITE.splitbeeAnalytics?.enabled && <SplitbeeAnalytics {...SITE.splitbeeAnalytics} />}
 
-<link rel="shortcut icon" href={getAsset('/favicon.ico')} />
+<link rel="shortcut icon" href={getAsset('/favicon.svg')} />
 <link rel="icon" type="image/svg+xml" href={getAsset('/favicon.svg')} />
 <link rel="mask-icon" href={getAsset('/favicon.svg')} color="#8D46E7" />
 <link rel="sitemap" href={getAsset('/sitemap-index.xml')} />

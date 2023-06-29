@@ -1,15 +1,15 @@
 import defaultImage from './assets/images/gh_heaer.png';
 
 const CONFIG = {
-  name: 'ResumeMatcher',
+  name: 'Resume Matcher',
 
   origin: 'https://www.resumematcher.fyi/',
   basePathname: '/',
   trailingSlash: false,
 
-  title: 'ResumeMatcher | Free Open Source Tool To Deep Dive Into Your Resume & Job Description',
+  title: 'Resume Matcher | Unlock Your Dream Job with Our Free Open Source Resume Matcher',
   description:
-    'Understand the key data differences between your job description and your resume, then improve upon it. Get hired faster!',
+    'Maximize Your Career Potential: Instantly Decode, Align, and Upgrade Your Resume with the Job Description. Discover Resume Matcher for Faster Success!',
   defaultImage: defaultImage,
 
   defaultTheme: 'dark', // Values: "system" | "light" | "dark" | "light:only" | "dark:only"
@@ -25,7 +25,7 @@ const CONFIG = {
   }),
 
   googleAnalyticsId: 'G-9TE3D9NWZB', // or "G-XXXXXXXXXX",
-  googleSiteVerificationId: '',
+  googleSiteVerificationId: 'pDKL81vMAVmhxTGnunLZJNEx21qNB0hzOYH6I-RCQ0Q',
 
   blog: {
     disabled: true,
