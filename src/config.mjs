@@ -7,9 +7,9 @@ const CONFIG = {
   basePathname: '/',
   trailingSlash: false,
 
-  title: 'Resume Matcher | Unlock Your Dream Job with Our Free Open Source Resume Matcher',
+  title: 'Resume Matcher | Free Open Source ATS Tool To Parse Your Resume',
   description:
-    'Maximize Your Career Potential: Instantly Decode, Align, and Upgrade Your Resume with the Job Description. Discover Resume Matcher for Faster Success!',
+    'Resume Matcher is a Free Open Source ATS Tool in Python Which Helps To Tailor Resumes To Job Descriptions',
   defaultImage: defaultImage,
 
   defaultTheme: 'dark', // Values: "system" | "light" | "dark" | "light:only" | "dark:only"
