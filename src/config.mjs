@@ -7,7 +7,7 @@ const CONFIG = {
   basePathname: '/',
   trailingSlash: false,
 
-  title: 'Resume Matcher | Free Open Source ATS Tool To Parse Your Resume',
+  title: 'Resume Matcher | Free Open Source ATS Tool To Match Resumes To Job Descriptions',
   description:
     'Resume Matcher is a Free Open Source ATS Tool in Python Which Helps To Tailor Resumes To Job Descriptions',
   defaultImage: defaultImage,
