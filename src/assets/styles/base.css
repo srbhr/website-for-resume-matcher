@@ -15,7 +15,7 @@
     background-color: var(--aw-color-bg-page);
   }
 
-  .bg-dark {
+  .bg-dark {  
     @apply bg-slate-900;
   }
 
