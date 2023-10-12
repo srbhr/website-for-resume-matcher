@@ -1,6 +1,6 @@
 ---
 import { Icon } from 'astro-icon';
-import { Picture } from '@astrojs/image/components';
+import { Picture } from 'astro:assets';
 
 interface CallToAction {
   text: string;
@@ -11,6 +11,7 @@ interface CallToAction {
 export interface Props {
   title?: string;
   subtitle?: string;
+  content?: string;
   callToAction?: string | CallToAction;
   callToAction2?: string | CallToAction;
   image?: string | any; // TODO: find HTMLElementProps
@@ -106,7 +107,6 @@ const {
                   class="mx-auto rounded-md w-full"
                   widths={[400, 768, 1024, 2040]}
                   sizes="(max-width: 767px) 400px, (max-width: 1023px) 768px, (max-width: 2039px) 1024px, 2040px"
-                  aspectRatio={1024 / 576}
                   loading="eager"
                   width={1024}
                   height={576}

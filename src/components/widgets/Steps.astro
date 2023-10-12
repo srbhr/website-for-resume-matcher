@@ -1,6 +1,6 @@
 ---
 import { Icon } from 'astro-icon';
-import { Picture } from '@astrojs/image/components';
+import { Picture } from 'astro:assets';
 
 interface Item {
   title: string;
@@ -62,7 +62,6 @@ const {
               class="inset-0 object-cover object-top w-full rounded-md shadow-lg md:absolute md:h-full bg-gray-400 dark:bg-slate-700"
               widths={[400, 768]}
               sizes="(max-width: 768px) 100vw, 432px"
-              aspectRatio="432:768"
               width={432}
               height={768}
               {...image}

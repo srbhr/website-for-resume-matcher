@@ -1,6 +1,6 @@
 ---
 import { Icon } from 'astro-icon';
-import { Picture } from '@astrojs/image/components';
+import { Picture } from 'astro:assets';
 
 import PostTags from '~/components/blog/Tags.astro';
 import SocialShare from '~/components/common/SocialShare.astro';
@@ -59,12 +59,10 @@ const { post, url } = Astro.props;
             sizes="(max-width: 900px) 400px, 900px"
             alt={post.description || ''}
             loading="eager"
-            aspectRatio={16 / 9}
             width={900}
             height={506}
             loading="eager"
             decoding="async"
-            background={undefined}
           />
         ) : (
           <div class="max-w-3xl mx-auto px-4 sm:px-6">

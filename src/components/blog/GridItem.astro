@@ -1,5 +1,5 @@
 ---
-import { Picture } from '@astrojs/image/components';
+import { Picture } from 'astro:assets';
 
 import { BLOG } from '~/config.mjs';
 import type { Post } from '~/types';
@@ -28,7 +28,6 @@ const image = await findImage(post.image);
             height={224}
             sizes="(max-width: 900px) 400px, 900px"
             alt={post.title}
-            aspectRatio="16:9"
             loading="lazy"
             decoding="async"
           />
