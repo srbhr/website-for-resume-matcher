@@ -1,4 +1,4 @@
-import type { AstroComponentFactory } from 'astro/runtime/server/index.js';
+import { AstroComponentFactory } from 'astro/dist/runtime/server';
 
 export interface Post {
   id: string;

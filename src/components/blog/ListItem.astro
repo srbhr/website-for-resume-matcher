@@ -1,6 +1,6 @@
 ---
 import { Icon } from 'astro-icon';
-import { Picture } from 'astro:assets';
+import { Picture } from '@astrojs/image/components';
 import PostTags from '~/components/blog/Tags.astro';
 
 import { BLOG } from '~/config.mjs';
@@ -32,6 +32,7 @@ const link = !BLOG?.post?.disabled ? getPermalink(post.permalink, 'post') : '';
               widths={[400, 900]}
               sizes="(max-width: 900px) 400px, 900px"
               alt={post.title}
+              aspectRatio="16:9"
               loading="lazy"
               decoding="async"
             />
