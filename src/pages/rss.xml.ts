@@ -4,7 +4,7 @@ import { SITE, BLOG } from '~/config.mjs';
 import { fetchPosts } from '~/utils/blog';
 import { getPermalink } from '~/utils/permalinks';
 
-export const GET = async () => {
+export const get = async () => {
   if (BLOG.disabled) {
     return new Response(null, {
       status: 404,
