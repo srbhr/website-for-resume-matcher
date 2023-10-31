@@ -61,6 +61,6 @@ export const footerData = {
     { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/srbhr/Resume-Matcher' },
   ],
   footNote: `
-  Apache 2.0  License © <a class="text-blue-200 target="_blank" rel="noopener noreferrer" hover:underline dark:text-gray-200" href="https://github.com/srbhr/Resume-Matcher/graphs/contributors"> Resume Matcher Contributors</a>
+  Apache 2.0  License © <a class="text-blue-200 hover:underline dark:text-gray-200" target="_blank" rel="noopener noreferrer" href="https://github.com/srbhr/Resume-Matcher/graphs/contributors"> Resume Matcher Contributors</a>
 `,
 };
