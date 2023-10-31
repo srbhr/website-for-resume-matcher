@@ -60,6 +60,8 @@ const { links = [], actions = [], isSticky = false, showToggleTheme = false, pos
               <a
                 class="font-medium hover:text-gray-900 dark:hover:text-white px-4 py-3 flex items-center transition duration-150 ease-in-out"
                 href={href}
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 {text}
               </a>
@@ -81,6 +83,8 @@ const { links = [], actions = [], isSticky = false, showToggleTheme = false, pos
                     { 'btn-ghost': type === 'ghost', 'btn-primary': type === 'primary' },
                   ]}
                   href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <Fragment set:html={text} />
                 </a>
